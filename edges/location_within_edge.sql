@@ -32,7 +32,7 @@ select
 from
     vertex
 where
-    properties ->> 'name' = 'South india'
+    properties ->> 'name' = 'South India'
 union
 all
 select
@@ -42,7 +42,7 @@ select
         from
             vertex
         where
-            properties ->> 'name' = 'South india'
+            properties ->> 'name' = 'South India'
     ) as tail_vertex,
     id as head_vertex,
     'is_within'
